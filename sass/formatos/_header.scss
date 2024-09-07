@@ -1,0 +1,42 @@
+#header{
+    max-width: 1920px;
+    height: 75px;
+    background-color:rgb(190, 63, 0);
+}
+
+#navBar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+ul , li{
+    display: inline-block;
+    margin: 5px;
+    margin-right: 50px;
+    font-size:large;
+}
+
+.navBar_ul {
+    color: white;
+    font-weight: bolder;
+}
+
+.link{
+    display: inline-block;
+    font-size: larger;
+}
+
+.img_logo{
+    width: 110px;
+    height: 100px;
+    margin-right: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

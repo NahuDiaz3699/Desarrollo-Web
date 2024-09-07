@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-style: none;
+    text-decoration: none;
+    font-family: "Gupter", serif;
+}
+
+/*ESTILOS NAVBAR/HEADER*/
+
+#header{
+    max-width: 1920px;
+    height: 75px;
+    background-color:rgb(190, 63, 0);
+}
+
+#navBar{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+ul , li{
+    display: inline-block;
+    margin: 5px;
+    margin-right: 50px;
+    font-size:large;
+}
+
+.navBar_ul {
+    color: white;
+    font-weight: bolder;
+}
+
+.link{
+    display: inline-block;
+    font-size: larger;
+}
+
+.img_logo{
+    width: 110px;
+    height: 100px;
+    margin-right: 300px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*ESTILOS DEL BODY*/
+
+#body{
+    max-width: 1920px;
+    background: url(../Images/Fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*ESTILOS DEL MAIN*/
+
+#main{
+    max-width: 1920px;
+    margin: 0px auto;
+    min-height: 100vh;
+    text-align: left;
+}
+
+.map{
+    display:grid;
+    justify-content:center;
+    align-items:center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.direccion{
+    width: 90%;
+    margin-bottom: 20px;
+    color:white;
+    border: 1px white solid;
+    background-color: black;
+    opacity: 80%;
+    margin-left: 38px;
+}
+
+
+.imagen-inicio{
+    margin-top: 100px;
+    width: 100%;
+    height: 450px;
+    opacity: 90%;
+}
+
+.grid-container{
+    display: grid;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    justify-content:space-evenly;
+    height: 700px;
+    overflow:auto;
+}
+
+.product-1, .product-2, .product-3,  .product-5,  .product-7, .product-8, .product-9, .product-10, .product-11 {
+    width: 320px;
+    height: 275px;
+    margin: 100px 70px 25px 70px;
+}
+
+.product-4,.product-6{
+    width: 320px;
+    height: 175px;
+    margin: 100px 70px 25px 70px;
+}
+
+.parrafo{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 60px;
+    width: 100%;
+    font-size: 35px;
+    justify-content: center;
+    border: 1px;
+    border-radius: 5px;
+    color: white;
+    background-color: black;
+    opacity: 80%;
+}
+
+.conteiner-img{
+    width: 90%;
+    height: 600px;
+    margin: 10px;
+    margin-left: 65px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: auto;
+    border: 1px black solid;
+    justify-content: space-around;
+    background: scroll black;
+    opacity: 80%;
+}
+
+h1{
+    color: wheat;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 565px;
+}
+.titulos{
+    color: white;
+    text-align: center;
+    font-style: oblique;
+    font-size: xx-large;
+}
+
+/*ESTILOS DEL FOOTER*/
+
+#footer{
+    height: 75px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(190, 63, 0);
+}
+
+
+.footer-logo{
+    width: 110px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.footer-text{
+    color: wheat;
+
+}
+
+.footer-redes a{
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
