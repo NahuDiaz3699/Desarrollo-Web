@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../Icons/LogoLoris2.png">
 
     <title>Loris S.A</title>
 </head>
@@ -19,12 +20,10 @@
 <body id="body">
 
     <header id="header">
-
         <nav id="navBar">
-
-            <img class="img_logo"  src="../Icons/LogoLoris2.png" alt="logo">
-
-
+            <a href="../pages/inicio.html">
+                <img class="img_logo" src="../Icons/LogoLoris2.png" alt="logo">
+            </a>
             <ul class="navBar_ul">
                 <li><a href="../pages/inicio.html">Inicio</a></li>
                 <li><a href="../pages/productos.html">Productos</a></li>
@@ -32,47 +31,37 @@
                 <li><a href="../pages/acercade.html">Acerca de</a></li>
                 <li><a href="../pages/contacto.html">Contacto</a></li>
             </ul>
-
         </nav>
-
     </header>
+    
 
     <main id="main">
 
-        <div class="map">
-        <h2 class="direccion">E.C. Villegas 2634, San Andres, Provincia de Buenos Aires</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.704415883583!2d-58.53180308948356!3d-34.561038655131334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7bd0367a0eb%3A0x32bb5f92e9813655!2sLoris%20S.A!5e0!3m2!1ses-419!2sar!4v1725495268889!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map_container">
+            <div class="container-direccion">
+               <h2 class="direccion">E.C. Villegas 2634, San Andres, Provincia de Buenos Aires</h2>
+            </div>
+            <div class="container-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.704415883583!2d-58.53180308948356!3d-34.561038655131334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7bd0367a0eb%3A0x32bb5f92e9813655!2sLoris%20S.A!5e0!3m2!1ses-419!2sar!4v1725495268889!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
 
     </main>
 
     <footer id="footer">
-
         <div class="footerLogo">
-            <img class="footer-logo" src="../Icons/LogoLoris2.png" alt="logo del sitio">
+            <a href="../pages/inicio.html">
+                <img class="footer-logo" src="../Icons/LogoLoris2.png" alt="logo del sitio">
+            </a>
         </div>
 
+        <p class="footer-text">&copy; 2024 Loris S.A. Todos los derechos reservados.</p>
 
-
-        <div class="footerLinks">
-            <ul class="footer_ul">
-                <li><a href="../pages/inicio.html">Inicio</a></li>
-                <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/alimentacion.html">Alimentacion</a></li>
-                <li><a href="../pages/acercade.html">Acerca de</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </div>
-
-
-
-        <div class="footerRedes">
-            <a href="https://www.facebook.com/" alt="facebook"><i class="fa-brands fa-square-facebook" alt="facebook"></i></a>
+        <div class="footer-redes">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" alt="facebook"></i></a>
             <a href="https://www.instagram.com/" alt="instagram"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.whatsapp.com/" alt="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
-
     </footer>
-
 </body>
 </html>

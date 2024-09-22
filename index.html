@@ -1,63 +1,58 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
 
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
 
         <link rel="icon" href="Icons/LogoLoris2.png">
-        <!--IMAGEN QUE APARECE EN LA WEB AL LADO DEL TITULO-->
 
         <link rel="stylesheet" href="css/style.css">
 
         <title>Loris S.A</title>
+
+
     </head>
 
     <body id="body">
 
-        <header id="header"> <!--ESTRUCTURA 1: HEADER (CABECERA Y NAVEGACION)-->
+        <header id="header">
 
-            <!--<a href="pages/loris1.html">IR A LORIS INICIO</a> SIEMPRE TIENE QUE HABER ALGO QUE ACOMPANE AL HIPERVINCULO-->
 
             <nav id="navBar">
-
-                <img class="img_logo" src="Icons/LogoLoris2.png" alt="logo">
+                <img class="img_logo"  src="../Icons/LogoLoris2.png" alt="logo">
 
 
                 <ul class="navBar_ul">
-                    <li><a href="pages/inicio.html">Inicio</a></li>
-                    <li><a href="pages/productos.html">Productos</a></li>
-                    <li><a href="pages/alimentacion.html">Alimentacion</a></li>
-                    <li><a href="pages/acercade.html">Acerca de</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
+                    <li><a href="../pages/inicio.html">Inicio</a></li>
+                    <li><a href="../pages/productos.html">Productos</a></li>
+                    <li><a href="../pages/alimentacion.html">Alimentacion</a></li>
+                    <li><a href="../pages/acercade.html">Acerca de</a></li>
+                    <li><a href="../pages/contacto.html">Contacto</a></li>
                 </ul>
-
-                <!--<ul> ETIQUETA PARA AVANZAR RAPIDO (<ul>li*5>a) ESTO ES: UNA LISTA DESORDENADA COMIENDO 5 LISTAS COMIENDO ANCHOR COMIENDO                     <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul> -->
 
             </nav>
 
         </header>
 
-        <main id="main"> <!--ESTRUCTURA 2: MAIN (CONTENIDO/CAJAS)-->
-
-            <!--<h1>ESTE ES EL INICIO</h1>-->
+        <main id="main">
 
             <img class="imagen-inicio" src="../Images/Loris Inicio.jpg" alt="portada">
 
-            <div>
-                <p class="p-style">En Loris, llevamos desde 1991 ofreciendo la mejor masa artesanal para que tus recetas brillen. Con más de 40 años de experiencia, nuestra masa, hecha con ingredientes de la más alta calidad, es perfecta para empanadas, tartas y pastelitos!. Además, contamos con una variedad de pastas que siguen la misma tradición de excelencia. Nos enorgullece ser un negocio familiar que entiende la importancia de los detalles y el amor en cada preparación. Ya sea que tengas un emprendimiento o simplemente disfrutes cocinar en casa, tenemos el mejor sabor y textura. ¡Te invitamos a probarlos y descubrir por qué somos la elección favorita de quienes buscan calidad en cada bocado!</p>
-             </div>
+            <div class="p-container">
+                <section class="p-section">
+                <p class="parrafo">En Loris, llevamos desde 1991 ofreciendo la mejor masa artesanal para que tus recetas brillen. Con más de 40 años de experiencia, nuestra masa, hecha con ingredientes de la más alta calidad, es perfecta para empanadas, tartas y pastelitos!. Además, contamos con una variedad de pastas que siguen la misma tradición de excelencia. Nos enorgullece ser un negocio familiar que entiende la importancia de los detalles y el amor en cada preparación. Ya sea que tengas un emprendimiento o simplemente disfrutes cocinar en casa, tenemos el mejor sabor y textura. ¡Te invitamos a probarlos y descubrir por qué somos la elección favorita de quienes buscan calidad en cada bocado!</p>
+            </section>
+            </div>
 
          <section class="grid-container">
 
@@ -76,39 +71,19 @@
          </section>
 
 
-            <!--<form> LABEL NO VA SI ESTA EL PLACEHOLDER
 
-                <label for="nombre"> indica tu nombre</label>
-                <input type="text" value="">
-                <label for="clave"> ingresa tu clave</label>
-                <input type="password" name="" id="">
-
-                <textarea name="" id=""></textarea>
-
-                <select name="desplegable" id="">
-                    <option value="">opcion1</option>
-                    <option value="">opcion2</option>
-                    <option value="">opcion3</option>
-                </select>
-
-
-                <input type="submit" name="" id="">
-
-            </form> FORMULARIO-->
         </main>
-
-        <!--ESTRUCTURA 3: FOOTER (PIE DE PAGINA)-->
 
         <footer id="footer">
             <div class="footerLogo">
 
-                <img class="footer-logo" src="Icons/LogoLoris2.png" alt="logo del sitio">
+                <img class="footer-logo" src="../Icons/LogoLoris2.png" alt="logo del sitio">
 
             </div>
 
             <p class="footer-text">&copy; 2024 Loris S.A. Todos los derechos reservados.</p>
 
-            <div class="footerRedes">
+            <div class="footer-redes">
                 <a href="https://www.facebook.com/"><i class="fa-brands fa-square-facebook" alt="facebook"></i></a>
                 <a href="https://www.instagram.com/" alt="instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.whatsapp.com/" alt="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
@@ -116,8 +91,6 @@
 
 
         </footer>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     </body>
     </html>
