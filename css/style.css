@@ -51,7 +51,7 @@ ul, li {
   font-size: 25px;
   font-family: "Gupter", serif;
   color: white;
-  padding: 5px;
+  padding: 10px;
   transition: all 0.3s linear;
 }
 
@@ -222,6 +222,13 @@ ul, li {
     margin: 10px 5px;
   }
 }
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  #myForm {
+      width: 100%;
+  }
+}
+
 /* Body */
 #body {
   max-width: 1920px;
@@ -238,37 +245,188 @@ ul, li {
   flex-grow: 1;
 }
 
-.map_container {
-  width: 100%;
+.contacto-page {
+  max-width: 1200px;
+  margin: 0 auto;
   height: auto;
+  margin-top: 80px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 50px;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map_container {
+  flex: 1;
 }
 
 .container-direccion {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  color: black;
+  font-family: "Roboto Slab", serif;;
 }
 
 .direccion {
+  font-size: 30px;
+  margin-top: 20px;
+  color: black;
+  text-align: center;
+}
+
+.titulo-form{
+  font-size: 35px;
+  margin-left: 20px;
+  color: whitesmoke;
+  font-family: "Roboto Slab", serif;
+  padding: auto;
   margin-bottom: 20px;
-  padding: 10px;
-  color: white;
+}
+
+/* Estilos para el formulario */
+#myForm {
+  background-color: #2a2a2a; /* Fondo oscuro */
+  padding: 20px;
   border-radius: 10px;
-  background-color: rgb(0, 0, 0);
-  opacity: 85%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+/* Estilo para los labels */
+label[for] {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #f0f0f0; /* Texto claro */
+}
+
+/* Estilo para los inputs */
+.input.form {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #444; /* Borde oscuro */
+  border-radius: 5px;
+  background-color: #3a3a3a; /* Fondo oscuro para los inputs */
+  color: #fff; /* Texto claro */
+  font-size: 14px;
+}
+
+/* Estilo para los placeholders */
+.input.form::placeholder {
+  color: #888; /* Color de los placeholders */
+}
+
+/* Estilo para el botón de envío */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* Color azul con buen contraste */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Efecto hover más oscuro */
+}
+
+.container-map {
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 50px;
+  width: 450px;
+  height: 450px;
+}
+
+.container-map iframe {
+  width: 100%;
+  height: 900px;
+  border: none;
+}
+
+.list_container {
+  margin-top: 0;
+  padding: 20px;
+  width: 900px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #963939;
+}
+
+.list_container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list_container li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.list_container label {
+  margin-right: 10px;
+  color: #555;
+}
+
+.list_container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.list_container button {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.list_container button:hover {
+  background-color: #0056b3;
 }
 
 .imagen-inicio {
-  margin-top: 50px;
+  margin-top: 20px;
   width: 100%;
   height: 450px;
+}
+
+.titulo_inicio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Great Vibes", cursive;
+  color: white;
+  font-size: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 150px;
 }
 
 .titulos{
@@ -283,45 +441,27 @@ ul, li {
   background:  rgb(190, 63, 0);
 }
 
-/* Estilo para las imágenes de productos */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Cambiado de 3 a 4 columnas */
-  gap: 10px;
-  margin: 20px;
-  padding: 20px;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  overflow-y: auto;
-  position: relative;
-}
-
-.grid-container::-webkit-scrollbar {
-  display: none;
-}
-
 .p-section {
   display: flex;
-  width: 90%;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
+  margin-top: 20px;
+  width: 95%;
+  height: 600px;
+  margin: 5px;
 }
 
 .parrafo {
-  font-size: 35px;
+  font-size: 40px;
   color: white;
   font-style: italic;
   padding: 45px;
   border: 2px solid orange;
   border-radius: 10px;
   background-color: rgb(190, 63, 0);
-  opacity: 100%;
 }
 
 .p-container {
   display: flex;
+  margin-top: 20px;
   justify-content: center;
   align-items: center;
 }
@@ -340,6 +480,22 @@ ul, li {
 }
 
 /* Estilo para la sección de productos en la página de inicio */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin: 20px;
+  padding: 20px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.grid-container::-webkit-scrollbar {
+  display: none;
+}
 .productos-section {
   margin: 20px;
   padding: 20px;
@@ -356,6 +512,7 @@ ul, li {
 .p-title {
   display: flex;
   align-items: center;
+  font-size: 35px;
   justify-content: center;
   font-family: "Great Vibes", cursive;
   color: white;
