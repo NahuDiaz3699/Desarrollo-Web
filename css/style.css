@@ -6,7 +6,6 @@
   box-sizing: border-box;
   font-style: none;
   text-decoration: none;
-  font-family: "Gupter", serif;
 }
 
 /*ESTILOS DEL BODY*/
@@ -16,7 +15,6 @@
 }
 
 /* ESTILO HEADER */
-/* Header */
 #header {
   max-width: 1920px;
   height: 90px;
@@ -50,6 +48,8 @@ ul, li {
 
 .navBar_ul li a {
   text-decoration: none;
+  font-size: 25px;
+  font-family: "Gupter", serif;
   color: white;
   padding: 5px;
   transition: all 0.3s linear;
@@ -67,7 +67,6 @@ ul, li {
 }
 
 /* ESTILO NAVBAR */
-/* Header */
 #header {
   max-width: 1920px;
   height: 90px;
@@ -118,7 +117,6 @@ ul, li {
 }
 
 /* ESTILO FOOTER */
-/* Footer */
 #footer {
   height: 75px;
   display: flex;
@@ -136,6 +134,7 @@ ul, li {
 
 .footer-text {
   color: wheat;
+  font-family: "Gupter", serif;
 }
 
 .footer-redes a {
@@ -272,21 +271,22 @@ ul, li {
   height: 450px;
 }
 
-.titulos {
-  font-size: 24px;
+.titulos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Great Vibes", cursive;
   color: white;
-  margin-bottom: 10px;
-  position: sticky;
-  top: 0;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 10px;
-  z-index: 1;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 150px;
+  background:  rgb(190, 63, 0);
 }
 
 /* Estilo para las imágenes de productos */
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr); /* Cambiado de 3 a 4 columnas */
   gap: 10px;
   margin: 20px;
   padding: 20px;
@@ -329,23 +329,22 @@ ul, li {
 /* Productos */
 .title-productos {
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 3em;
+  justify-content: center;
+  font-size: 40px;
+  font-family: "Great Vibes", cursive;
   color: white;
-  margin: 50px 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  margin: 20px;
-  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 150px;
 }
 
 /* Estilo para la sección de productos en la página de inicio */
 .productos-section {
   margin: 20px;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  max-height: 700px;
+  min-height: 375px ;
+  max-height: auto;
   overflow-y: auto;
   position: relative;
 }
@@ -354,34 +353,16 @@ ul, li {
   overflow-y: auto;
 }
 
-.productos-section::-webkit-scrollbar {
-  display: none;
-}
-
-.productos-section-inicio {
-  margin: 20px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  min-height: 1000px;
-  overflow-y: auto;
-  position: relative;
-}
-
-.productos-section-inicio:hover {
-  overflow-y: auto;
-}
-
-.productos-section-inicio::-webkit-scrollbar {
-  display: none;
-}
-
-
-.titulos {
-  text-align: center;
-  font-size: 2em;
+.p-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Great Vibes", cursive;
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 150px;
+  background:  rgb(190, 63, 0);
 }
 
 .img-productos {
@@ -396,6 +377,7 @@ ul, li {
   height: 210px;
   transition: transform 0.3s ease;
   margin-bottom: 20px;
+  justify-content: space-between;
 }
 
 .product-1:hover {
@@ -445,7 +427,7 @@ ul, li {
 
 /* Hover sobre el contenedor del producto */
 .producto:hover {
-  transform: scale(1.3);
+  transform: translateY(10px) scale(1.3);
   z-index: 2;
 }
 
