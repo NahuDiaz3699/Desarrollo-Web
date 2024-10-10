@@ -4,14 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-style: none;
   text-decoration: none;
-}
-
-/*ESTILOS DEL BODY*/
-#body {
-  max-width: 1920px;
-  background-color: blanchedalmond;
 }
 
 /* ESTILO HEADER */
@@ -52,56 +45,6 @@ ul, li {
   font-family: "Gupter", serif;
   color: white;
   padding: 10px;
-  transition: all 0.3s linear;
-}
-
-.navBar_ul li a:hover {
-  border: 2px solid orange;
-  border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.img_logo {
-  width: 90px;
-  height: 110px;
-}
-
-/* ESTILO NAVBAR */
-#header {
-  max-width: 1920px;
-  height: 90px;
-  background-color: rgb(190, 63, 0);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#navBar {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-ul, li {
-  display: inline-block;
-  margin: 0;
-}
-
-.navBar_ul {
-  color: white;
-  font-weight: bolder;
-}
-
-.navBar_ul li {
-  margin: 0 25px;
-}
-
-.navBar_ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 5px;
   transition: all 0.3s linear;
 }
 
@@ -204,6 +147,9 @@ ul, li {
     font-size: 20px;
     padding: 15px;
   }
+  #myForm {
+    width: 100%;
+}
 }
 /* Móviles más pequeños */
 @media screen and (max-width: 480px) {
@@ -220,12 +166,6 @@ ul, li {
   .product-1, .product-2 {
     width: 130px;
     margin: 10px 5px;
-  }
-}
-/* Ajustes para pantallas pequeñas */
-@media (max-width: 768px) {
-  #myForm {
-      width: 100%;
   }
 }
 
