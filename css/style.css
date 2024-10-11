@@ -96,76 +96,110 @@ ul, li {
   padding: 5px;
 }
 
-/* BREAKPOINTS */
-/* Pantallas grandes */
-@media screen and (min-width: 1024px) {
-  .img_logo {
-    width: 110px;
-    height: 100px;
-    margin-right: 300px;
-  }
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
-    height: 700px;
-  }
-}
-/* Pantallas Medianas*/
+/*BREAKPOINTS*/
+/*pantallas grandes*/
 @media screen and (max-width: 1024px) {
-  .img_logo {
-    width: 80px;
-    height: 80px;
-    margin-right: 150px;
+  #header {
+    height: 70px;
   }
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    height: auto;
+
+  .navBar_ul li {
+    margin: 0 15px;
   }
-  .product-1, .product-2 {
-    width: 200px;
-    margin: 50px 30px;
-  }
-  .parrafo {
-    font-size: 25px;
-    padding: 20px;
-  }
-}
-/* Pantallas Chicas*/
-@media screen and (max-width: 768px) {
+
   .img_logo {
     width: 60px;
     height: 60px;
-    margin-right: 50px;
+    margin-right: 20px;
   }
+
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
   }
-  .product-1, .product-2 {
-    width: 150px;
-    margin: 20px 15px;
+
+  .titulo_inicio {
+    font-size: 35px;
   }
-  .parrafo {
-    font-size: 20px;
-    padding: 15px;
-  }
-  #myForm {
-    width: 100%;
-  }
-}
-/* Pantallas mas chicas */
-@media screen and (max-width: 480px) {
-  .navBar_ul li {
-    margin: 0 10px;
-  }
+
   .parrafo {
     font-size: 18px;
     padding: 10px;
   }
-  .grid-container {
+
+  .product-1 {
+    margin: 10px 0;
+  }
+
+  #myForm {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .list_container {
+    width: 100%;
+  }
+}
+/*pantallas chicas*/
+@media screen and (max-width: 768px) {
+  #header {
+    height: 60px;
+  }
+
+  .navBar_ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
   }
-  .product-1, .product-2 {
-    width: 130px;
-    margin: 10px 5px;
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .product-1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .direccion {
+    font-size: 24px;
+  }
+
+  .titulo_inicio {
+    font-size: 30px;
+  }
+
+  .parrafo {
+    font-size: 16px;
+  }
+}
+/*pantallas mas chicas*/
+@media screen and (max-width: 480px) {
+  .img_logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .product-1 {
+    width: 90%;
+  }
+
+  .titulo_inicio {
+    font-size: 25px;
+  }
+
+  .direccion {
+    font-size: 20px;
+  }
+
+  .parrafo {
+    font-size: 14px;
   }
 }
 
