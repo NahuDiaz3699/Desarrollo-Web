@@ -1,14 +1,5 @@
 {
-  "name": "desarrollo-web",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "sweetalert2": "^11.14.2"
+    "sass": "^1.79.5"
   }
 }
