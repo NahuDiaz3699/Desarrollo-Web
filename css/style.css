@@ -109,7 +109,7 @@ ul, li {
     height: 700px;
   }
 }
-/* Pantallas medianas (tabletas) */
+/* Pantallas Medianas*/
 @media screen and (max-width: 1024px) {
   .img_logo {
     width: 80px;
@@ -129,7 +129,7 @@ ul, li {
     padding: 20px;
   }
 }
-/* Pantallas pequeñas (celulares) */
+/* Pantallas Chicas*/
 @media screen and (max-width: 768px) {
   .img_logo {
     width: 60px;
@@ -149,9 +149,9 @@ ul, li {
   }
   #myForm {
     width: 100%;
+  }
 }
-}
-/* Móviles más pequeños */
+/* Pantallas mas chicas */
 @media screen and (max-width: 480px) {
   .navBar_ul li {
     margin: 0 10px;
