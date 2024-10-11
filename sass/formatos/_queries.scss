@@ -1,106 +1,118 @@
 /*BREAKPOINTS*/
-/*pantallas grandes*/
-@media screen and (max-width: 1024px) {
-  #header {
-    height: 70px;
-  }
-
-  .navBar_ul li {
-    margin: 0 15px;
-  }
-
-  .img_logo {
-    width: 60px;
-    height: 60px;
-    margin-right: 20px;
-  }
-
-  .grid-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-  }
-
-  .titulo_inicio {
-    font-size: 35px;
-  }
-
-  .parrafo {
-    font-size: 18px;
-    padding: 10px;
-  }
-
-  .product-1 {
-    margin: 10px 0;
-  }
-
-  #myForm {
-    width: 100%;
-    padding: 15px;
-  }
-
-  .list_container {
-    width: 100%;
-  }
-}
-/*pantallas chicas*/
-@media screen and (max-width: 768px) {
-  #header {
-    height: 60px;
-  }
-
-  .navBar_ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .grid-container {
-    grid-template-columns: 1fr;
-    gap: 15px;
-  }
-
-  .product-1 {
-    width: 100%;
-    height: auto;
-  }
-
-  .direccion {
-    font-size: 24px;
-  }
-
-  .titulo_inicio {
-    font-size: 30px;
-  }
-
-  .parrafo {
-    font-size: 16px;
-  }
-}
-/*pantallas mas chicas*/
+/* Pantallas muy pequeñas (móviles) */
 @media screen and (max-width: 480px) {
-  .img_logo {
-    width: 40px;
-    height: 40px;
+  .navBar ul {
+    display: none; 
   }
 
-  .grid-container {
-    grid-template-columns: 1fr;
+  .navBar ul li {
+    display: none; 
   }
 
-  .product-1 {
-    width: 90%;
+  .navBar ul li.contacto {
+    display: block; 
   }
 
-  .titulo_inicio {
-    font-size: 25px;
+  .inicio-texto {
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
   }
 
-  .direccion {
-    font-size: 20px;
+  .contacto-contenedor {
+    display: flex; 
+    flex-direction: column; 
   }
 
-  .parrafo {
-    font-size: 14px;
+  .contacto-mapa {
+    order: 1; 
+    flex: 1; 
+  }
+
+  .contacto-formulario {
+    order: 2; 
+    flex: 1; 
+  }
+}
+
+/* Pantallas pequeñas (tabletas) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .navBar ul {
+    display: flex; 
+  }
+
+  .navBar ul li {
+    display: block; 
+  }
+
+  .inicio-texto {
+    white-space: normal; 
+    overflow: visible; 
+  }
+
+  .contacto-contenedor {
+    flex-direction: column; 
+  }
+
+  .contacto-mapa,
+  .contacto-formulario {
+    flex: none; 
+  }
+}
+
+/* Pantallas medianas (pantallas de laptops) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .navBar ul {
+    display: flex; 
+  }
+
+  .navBar ul li {
+    display: block; 
+  }
+
+  .inicio-texto {
+    white-space: normal; 
+    overflow: visible; 
+  }
+
+  .contacto-contenedor {
+    display: flex; 
+    flex-direction: column; 
+  }
+
+  .contacto-mapa,
+  .contacto-formulario {
+    flex: none; 
+  }
+}
+
+/* Pantallas grandes (desktops) */
+@media screen and (min-width: 1025px) and (max-width: 1920px) {
+  .navBar ul {
+    display: flex; 
+  }
+
+  .navBar ul li {
+    display: block; 
+  }
+
+  .inicio-texto {
+    white-space: normal; 
+    overflow: visible; 
+  }
+
+  .contacto-contenedor {
+    display: flex; 
+    flex-direction: row; 
+  }
+
+  .contacto-mapa {
+    order: 1; 
+    flex: 1; 
+  }
+
+  .contacto-formulario {
+    order: 2; 
+    flex: 1; 
   }
 }
