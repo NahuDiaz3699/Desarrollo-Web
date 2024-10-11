@@ -25,6 +25,7 @@
     <link rel="icon" href="../Icons/LogoLoris2.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <title>Loris S.A</title>
 </head>
@@ -33,15 +34,15 @@
 
     <header id="header">
         <nav id="navBar">
-            <a href="../pages/inicio.html">
+            <a href="../pages/inicio.html" class="logo-container">
                 <img class="img_logo" src="../Icons/LogoLoris2.png" alt="logo">
             </a>
             <ul class="navBar_ul">
                 <li><a href="../pages/inicio.html">Inicio</a></li>
                 <li><a href="../pages/productos.html">Productos</a></li>
                 <li><a href="../pages/alimentacion.html">Alimentacion</a></li>
-                <li><a href="../pages/acercade.html">Acerca de</a></li>
                 <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/acercade.html">Acerca de</a></li>
             </ul>
         </nav>
     </header>
@@ -56,37 +57,40 @@
                     <h2 class="direccion">E.C. Villegas 2634, San Andres, Provincia de Buenos Aires</h2>
                 </div>
                 <div class="container-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.704415883583!2d-58.53180308948356!3d-34.561038655131334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7bd0367a0eb%3A0x32bb5f92e9813655!2sLoris%20S.A!5e0!3m2!1ses-419!2sar!4v1728581603192!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.704415883583!2d-58.53180308948356!3d-34.561038655131334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7bd0367a0eb%3A0x32bb5f92e9813655!2sLoris%20S.A!5e0!3m2!1ses-419!2sar!4v1728581603192!5m2!1ses-419!2sar" width="400" height="900" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
 
                 <div class="list_container">
                     <h2 class="titulo-form">Quiero que me contacte un vendedor</h2>
+                    <div class="subtitulo-form">
+                        <p>Loris S.A. se esfuerza por garantizar la calidad de sus productos, pero <strong>no puede asumir responsabilidad por interrupciones en la cadena de frío fuera de nuestras instalaciones.</strong></p>
+                    </div>
                     <form id="myForm">
                         <ul>
                             <li>
                                 <label for="elemento9">Nombre:</label>
-                                <input class="input.form" type="text" id="elemento1" name="elemento1" placeholder="Ingrese un valor">
+                                <input class="input.form" type="text" id="elemento1" name="elemento1" placeholder="Ingrese su nombre">
                             </li>
                             <li>
                                 <label for="elemento9">Email:</label>
-                                <input class="input.form" type="text" id="elemento2" name="elemento2" placeholder="Ingrese un valor">
+                                <input class="input.form" type="text" id="elemento2" name="elemento2" placeholder="Ingrese su email">
                             </li>
                             <li>
                                 <label for="elemento9">Telefono:</label>
-                                <input class="input.form" type="text" id="elemento3" name="elemento3" placeholder="Ingrese un valor">
+                                <input class="input.form" type="text" id="elemento3" name="elemento3" placeholder="Ingrese su telefono">
                             </li>
                             <li>
-                                <label for="elemento9">Dirección completa (calle, número, CP):</label>
-                                <input class="input.form" type="text" id="elemento4" name="elemento4" placeholder="Ingrese un valor">
+                                <label for="elemento9">Dirección completa (calle, numero, cp):</label>
+                                <input class="input.form" type="text" id="elemento4" name="elemento4" placeholder="Ingrese su direccion">
                             </li>
                             <li>
-                                <label for="elemento9">Tamaño del negocio:</label>
-                                <input class="input.form" type="text" id="elemento5" name="elemento5" placeholder="Ingrese un valor">
+                                <label for="seleccion-negocio">Tamaño del negocio:</label>
+                                <input class="input.form" type="text" id="elemento5" name="elemento5" placeholder="Seleccione una opcion">
                             </li>
                             <li>
                                 <label for="elemento9">Mensaje:</label>
-                                <input class="input.form"  type="text" id="elemento6" name="elemento5" placeholder="Ingrese un valor">
+                                <input class="input.form"  type="text" id="elemento6" name="elemento6" placeholder="Ingrese un valor">
                             </li>
                         </ul>
                         <button type="submit">Enviar</button>
@@ -111,17 +115,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            Swal.fire({
-                title: 'Por favor, ten en cuenta que Loris S.A. se esfuerza por garantizar la calidad de sus productos, pero no puede asumir responsabilidad por interrupciones en la cadena de frío fuera de nuestras instalaciones.',
-                text: 'Estamos aquí para ayudarte.',
-                icon: 'info',
-                confirmButtonText: 'Aceptar'
-            });
-        });
-    </script>
+    <script src="../JS/app.js"></script>
 </body>
 </html>

@@ -189,13 +189,12 @@ ul, li {
   max-width: 1200px;
   margin: 0 auto;
   height: auto;
-  margin-top: 80px;
+  margin-top: 50px;
   display: flex;
   gap: 20px;
   padding: 20px;
   background-color: #f4f4f4;
   border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .map_container {
@@ -216,18 +215,37 @@ ul, li {
 }
 
 .titulo-form{
-  font-size: 35px;
-  margin-left: 20px;
-  color: whitesmoke;
-  font-family: "Roboto Slab", serif;
-  padding: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 50px;
+  margin-left: 15px;
   margin-bottom: 20px;
+  font-size: 39px;
+  color: black;
+  font-family: "Roboto Slab", serif;
+  border-radius: 10px;
+}
+
+.subtitulo-form{
+  display: flex;
+  width: 92%;
+  border-radius: 10px;
+  color:rgb(100, 4, 4);
+  font-size: bold;
+  padding: 10px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  background-color: #e21212;
 }
 
 /* Estilos para el formulario */
 #myForm {
-  background-color: #2a2a2a; /* Fondo oscuro */
+  background-color: #2a2a2a;
   padding: 20px;
+  width: 95%;
+  height: 600px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   max-width: 600px;
@@ -246,33 +264,36 @@ li {
 
 /* Estilo para los labels */
 label[for] {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #f0f0f0; /* Texto claro */
+  color: #f0f0f0;
 }
 
 /* Estilo para los inputs */
 .input.form {
   width: 100%;
   padding: 12px;
-  border: 1px solid #444; /* Borde oscuro */
+  border: 1px solid #444;
   border-radius: 5px;
-  background-color: #3a3a3a; /* Fondo oscuro para los inputs */
-  color: #fff; /* Texto claro */
+  background-color: #3a3a3a;
+  color: #fff;
   font-size: 14px;
 }
 
 /* Estilo para los placeholders */
 .input.form::placeholder {
-  color: #888; /* Color de los placeholders */
+  color: #888;
 }
 
 /* Estilo para el botón de envío */
 button {
   width: 100%;
   padding: 12px;
-  background-color: #007bff; /* Color azul con buen contraste */
+  background-color: #007bff;
   border: none;
   border-radius: 5px;
   color: white;
@@ -281,7 +302,7 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3; /* Efecto hover más oscuro */
+  background-color: #0056b3;
 }
 
 .container-map {
@@ -289,7 +310,7 @@ button:hover {
   border-radius: 10px;
   margin-top: 50px;
   width: 450px;
-  height: 450px;
+  height: 700px;
 }
 
 .container-map iframe {
@@ -302,9 +323,8 @@ button:hover {
   margin-top: 0;
   padding: 20px;
   width: 900px;
-  border: 1px solid #ccc;
   border-radius: 10px;
-  background-color: #963939;
+  background-color:#963939;
 }
 
 .list_container ul {
