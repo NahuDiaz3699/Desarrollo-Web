@@ -48,14 +48,10 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.logo-container{
-  width: 250px;
-  height: 100px;
-  margin-bottom: 5px;
-}
-
 .img_logo{
-  width: 100%;
+  width: 150px;
+  height: 100px;
+  margin-right: 250px;
 }
 
 /* ESTILO FOOTER */
@@ -103,20 +99,22 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
 }
 
 /* Main */
 #main {
   max-width: 1920px;
-  min-height: 900px;
-  flex-grow: 1;
+  flex: 1;
 }
 
 .contacto-page {
   display: flex;
   justify-content: space-between;
   gap: 20px;
-  padding: 20px;
+  padding: 10px;
   background-color: #f4f4f4;
   border-radius: 10px;
   max-width: 1200px;
@@ -126,8 +124,7 @@
 }
 
 .map_container {
-  flex: 1;
-  width: 50%  ;
+  width: 50%;
 }
 
 .container-direccion {
@@ -146,11 +143,13 @@
 .titulo-form{
   display: flex;
   text-align: center;
+  align-items: center;
   justify-content: center;
+  text-align: center;
   width: 95%;
   height: 50px;
   margin-left: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-size: 32.6px;
   color: black;
   font-family: "Roboto Slab", serif;
@@ -174,9 +173,9 @@
 #myForm {
   background-color: #1e1e1e;
   border-radius: 10px;
-  padding: 20px;
+  padding: 15px;
   width: 98%;
-  height: 600px;
+  height: auto;
   margin: auto;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
@@ -236,13 +235,13 @@ button:hover {
 
 .container-map iframe {
   width: 100%;
-  height: 100%;
+  height: 900px;
   border: none;
 }
 
 .list_container {
   margin-top: 0;
-  padding: 20px;
+  padding: 10px;
   width:  50%;
   border-radius: 10px;
   background-color:rgb(242, 140, 40);
@@ -251,21 +250,30 @@ button:hover {
 .imagen-inicio {
   margin-top: 20px;
   width: 100%;
-  height: 450px;
+  height: 620px;
 }
 
-.titulo_inicio{
+.contenedor-titulo{
   width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
+}
+
+.titulo_inicio {
+  width: 32%;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   font-family: "Great Vibes", cursive;
   color: white;
   font-size: 50px;
-  margin-bottom: 20px;
-  margin-top: 20px;
   height: 150px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .titulos{
@@ -309,15 +317,26 @@ button:hover {
 
 /* Productos */
 .title-productos {
+  width: 32%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 40px;
   font-family: "Great Vibes", cursive;
   color: white;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  font-size: 50px;
   height: 150px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.contenedor-title-productos{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 20px 0px;
 }
 
 /* Estilo para la sección de productos en la página de inicio */
@@ -327,7 +346,6 @@ button:hover {
   gap: 10px;
   margin: 20px;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   overflow-y: auto;
   position: relative;
