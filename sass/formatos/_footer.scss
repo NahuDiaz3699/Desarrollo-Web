@@ -1,11 +1,11 @@
 /* ESTILO FOOTER */
-#footer {
-  height: 100px;
+#footer{
+  height: 115px;
+  max-width: 1920px;
+  background-color: rgb(67, 12, 0);
   display: flex;
-  justify-content: space-around;
+  justify-content:space-around;
   align-items: center;
-  background-color: rgb(190, 63, 0);
-  margin-top: auto;
 }
 
 .footer-logo {
@@ -16,8 +16,6 @@
 
 .footer-text {
   color: wheat;
-  font-family: "Roboto", sans-serif;
-  font-size: larger;
 }
 
 .footer-redes a {

@@ -17,15 +17,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=o+Slab:wght@100..900&display=swap" rel="stylesheet">
 
 
     <link rel="icon" href="../Icons/LogoLoris2.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <title>Loris S.A</title>
 </head>
@@ -34,14 +30,18 @@
 
     <header id="header">
         <nav id="navBar">
-            <a href="../pages/inicio.html" class="logo-container">
-                <img class="img_logo" src="../Icons/LogoLoris2.png" alt="logo">
-            </a>
+
+            <div class="logo-container">
+                <a href="../pages/inicio.html">
+                    <img class="img_logo" src="../Icons/LogoLoris2.png" alt="logo">
+                </a>
+            </div>
+
             <ul class="navBar_ul">
                 <li><a href="../pages/inicio.html">Inicio</a></li>
                 <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/alimentacion.html">Alimentacion</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/distribuidores.html">Distribuidores</a></li>
+                <li><a class="contacto" href="../pages/contacto.html">Contacto</a></li>
                 <li><a href="../pages/acercade.html">Acerca de</a></li>
             </ul>
         </nav>
@@ -49,59 +49,55 @@
 
 
     <main id="main">
-
+    <div class="contactoPagina">
         <section class="contacto-page" >
-
             <div class="map_container">
                 <div class="container-direccion">
-                    <h2 class="direccion">E.C. Villegas 2643, San Andres, Provincia de Buenos Aires</h2>
+                    <h2 class="direccion">E.C. Villegas 2643, PBA.</h2>
                 </div>
-                <div class="container-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.704415883583!2d-58.53180308948356!3d-34.561038655131334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7bd0367a0eb%3A0x32bb5f92e9813655!2sLoris%20S.A!5e0!3m2!1ses-419!2sar!4v1728581603192!5m2!1ses-419!2sar" loading="lazy"></iframe>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.7044158835583!2d-58.531803089176954!3d-34.561038655131945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7bd0367a0eb%3A0x32bb5f92e9813655!2sLoris%20S.A!5e0!3m2!1ses-419!2sar!4v1730303278090!5m2!1ses-419!2sar" width="600" height="668" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-
-                <div class="list_container">
-                    <h2 class="titulo-form">Quiero que me contacte un vendedor</h2>
-                    <div class="subtitulo-form">
-                        <p>Loris S.A. se esfuerza por garantizar la calidad de sus productos, pero <strong>no puede asumir responsabilidad por interrupciones en la cadena de frío fuera de nuestras instalaciones.</strong></p>
-                    </div>
-                    <form id="myForm">
-                        <ul>
-                            <li>
-                                <label for="elemento1">Nombre:</label>
-                                <input class="input form" type="text" id="elemento1" name="elemento1" placeholder="Ingrese su nombre" required>
-                            </li>
-                            <li>
-                                <label for="elemento2">Email:</label>
-                                <input class="input form" type="email" id="elemento2" name="elemento2" placeholder="Ingrese su email" required>
-                            </li>
-                            <li>
-                                <label for="elemento3">Teléfono:</label>
-                                <input class="input form" type="tel" id="elemento3" name="elemento3" placeholder="Ingrese su teléfono" required>
-                            </li>
-                            <li>
-                                <label for="elemento4">Dirección completa (calle, número, CP):</label>
-                                <input class="input form" type="text" id="elemento4" name="elemento4" placeholder="Ingrese su dirección" required>
-                            </li>
-                            <li>
-                                <label for="elemento5">Tamaño del negocio:</label>
-                                    <select class="input form" id="elemento5" name="elemento5" required>
-                                        <option value="">Seleccione una opción</option>
-                                        <option value="pequeño">Pequeño</option>
-                                        <option value="mediano">Mediano</option>
-                                        <option value="grande">Grande</option>
-                                    </select>
-                            </li>
-                            <li>
-                                <label for="elemento6">Mensaje:</label>
-                                <input class="input form" type="text" id="elemento6" name="elemento6" placeholder="Ingrese su mensaje" required>
-                            </li>
-                        </ul>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
+            <div class="list_container">
+                <h2 class="titulo-form">Quiero que me contacte un vendedor</h2>
+                <form id="myForm" action="/send-email" method="POST">
+                    <ul>
+                        <li>
+                            <label for="elemento1">Nombre:</label>
+                            <input class="input form" type="text" id="elemento1" name="elemento1" placeholder="Ingrese su nombre" required>
+                        </li>
+                        <li>
+                            <label for="elemento2">Email:</label>
+                            <input class="input form" type="email" id="elemento2" name="elemento2" placeholder="Ingrese su email" required>
+                        </li>
+                        <li>
+                            <label for="elemento3">Teléfono:</label>
+                            <input class="input form" type="tel" id="elemento3" name="elemento3" placeholder="Ingrese su teléfono" required>
+                        </li>
+                        <li>
+                            <label for="elemento4">Dirección completa (calle, número, CP):</label>
+                            <input class="input form" type="text" id="elemento4" name="elemento4" placeholder="Ingrese su dirección" required>
+                        </li>
+                        <li>
+                            <label for="elemento5">Tamaño del negocio:</label>
+                                <select class="input form" id="elemento5" name="elemento5" required>
+                                    <option value="">Seleccione una opción</option>
+                                    <option value="pequeño">Pequeño</option>
+                                    <option value="mediano">Mediano</option>
+                                    <option value="grande">Grande</option>
+                                </select>
+                        </li>
+                        <li>
+                            <label for="elemento6">Mensaje:</label>
+                            <input class="input form" type="text" id="elemento6" name="elemento6" placeholder="Ingrese su mensaje" required>
+                        </li>
+                    </ul>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
+    </div>
     </main>
 
     <footer id="footer">

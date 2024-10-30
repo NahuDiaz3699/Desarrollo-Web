@@ -17,15 +17,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=o+Slab:wght@100..900&display=swap" rel="stylesheet">
 
 
     <link rel="icon" href="../Icons/LogoLoris2.png">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <title>Loris S.A</title>
 </head>
@@ -34,24 +30,25 @@
 
     <header id="header">
         <nav id="navBar">
-            <a href="../pages/inicio.html" class="logo-container">
-                <img class="img_logo" src="../Icons/LogoLoris2.png" alt="logo">
-            </a>
+
+            <div class="logo-container">
+                <a href="../pages/inicio.html">
+                    <img class="img_logo" src="../Icons/LogoLoris2.png" alt="logo">
+                </a>
+            </div>
+
             <ul class="navBar_ul">
                 <li><a href="../pages/inicio.html">Inicio</a></li>
                 <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/alimentacion.html">Alimentacion</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
+                <li><a href="../pages/distribuidores.html">Distribuidores</a></li>
+                <li><a class="contacto" href="../pages/contacto.html">Contacto</a></li>
                 <li><a href="../pages/acercade.html">Acerca de</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main">
-        <div  class="contenedor-title-productos">
-            <div class="title-productos"><h1>Productos</h1></div>
-        </div>
-        <div class="p-title"><h2>Tapas</h2></div>
+        <h2 class="p-title">Tapas</h2>
         <section class="productos-section">
             <div class="img-productos">
                 <div class="producto">
@@ -63,7 +60,7 @@
                     <div class="info">Descripción de producto</div>
                 </div>
                 <div class="producto">
-                    <img class="product-1" src="../Images/Disco Freir.jpg" alt="Disco Freir">
+                    <img class="product-2" src="../Images/Disco Freir.jpg" alt="disco freir">
                     <div class="info">Descripción de producto</div>
                 </div>
                 <div class="producto">
@@ -81,7 +78,7 @@
             </div>
         </section>
 
-        <div class="p-title"><h2>Pastas</h2></div>
+        <h2 class="p-title">Pastas</h2>
         <section class="productos-section">
             <div class="img-productos">
                 <div class="producto">
@@ -103,13 +100,16 @@
             </div>
         </section>
 
-        <div class="p-title"><h2>Panificados</h2></div>
+        <h2 class="p-title">Panificados</h2>
         <section class="productos-section">
-            <div class="producto">
-                <img class="product-1" src="../Images/Pizza.jpg" alt="Pre-Pizza">
-                <div class="info">Descripción de producto</div>
+            <div class="img-productos">
+                <div class="producto">
+                    <img class="product-1" src="../Images/Pizza.jpg" alt="Pre-Pizza">
+                    <div class="info">Descripción de producto</div>
+                </div>
             </div>
         </section>
+
     </main>
 
     <footer id="footer">
