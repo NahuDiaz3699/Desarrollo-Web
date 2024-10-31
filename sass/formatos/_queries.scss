@@ -1,0 +1,220 @@
+/* Para dispositivos pequeños (320px - 480px) */
+@media only screen and (max-width: 480px) {
+    #header, #footer {
+      width: 100%;
+      flex-direction: column;
+      height: auto;
+  }
+  #navBar{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  .navBar_ul{
+    margin-left: 80px;
+    flex-direction: column;
+  }
+  .navBar_ul li a{
+    padding: 0%;
+    justify-content: center;
+  }
+  .img_logo {
+    width: 100px;
+    height: 80px;
+    margin-right: 0;
+  }
+  .navBar_ul li a {
+    font-size: 18px;
+    flex-direction: column;
+  }
+  .footerLogo{
+    height: 85px;
+    display: flex;
+  }
+  .footer-text{
+    text-align: center;
+  }
+  .footer-redes{
+    height: 50px;
+    padding-top: 10px;
+  }
+  .imagen-inicio{
+    display: none;
+  }
+  .contenedor-titulo{
+    text-align: center;
+  }
+  .contacto-page {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .titulo-form {
+    font-size: 25px;
+  }
+  .subtitulo-form {
+    font-size: 18px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .titulosProductos{
+    width: 100%;
+  }
+  .contenedorDist{
+    flex-direction: column;
+  }
+  .contenedorZonas{
+    width: 88%;
+  }
+  .map_container{
+    width: 100%;
+  }
+  .container-direccion{
+    font-size: 20px;
+    text-align: center;
+  }
+  .mapMap iframe{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .list_container{
+    width: 100%;
+  }
+  .titulo-form{
+    text-align: center;
+  }
+  }
+  
+  /* Para tabletas y móviles grandes (481px - 768px) */
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    #header, #footer {
+      width: 100%;
+      flex-direction: column;
+      height: auto;
+  }
+  #navBar{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  .navBar_ul{
+    margin-left: 80px;
+    flex-direction: column;
+  }
+  .navBar_ul li a{
+    padding: 0%;
+    justify-content: center;
+  }
+  .img_logo {
+    width: 100px;
+    height: 80px;
+    margin-right: 0;
+  }
+  .navBar_ul li a {
+    font-size: 18px;
+    flex-direction: column;
+  }
+  .footerLogo{
+    height: 85px;
+    display: flex;
+  }
+  .footer-text{
+    text-align: center;
+  }
+  .footer-redes{
+    height: 50px;
+    padding-top: 10px;
+  }
+  .imagen-inicio{
+    display: none;
+  }
+  .contenedor-titulo{
+    text-align: center;
+  }
+  .contacto-page {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .titulo-form {
+    font-size: 25px;
+  }
+  .subtitulo-form {
+    font-size: 18px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .titulosProductos{
+    width: 100%;
+  }
+  .contenedorDist{
+    flex-direction: column;
+  }
+  .contenedorZonas{
+    width: 88%;
+  }
+  .map_container{
+    width: 100%;
+  }
+  .container-direccion{
+    font-size: 20px;
+    text-align: center;
+  }
+  .mapMap iframe{
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .list_container{
+    width: 100%;
+  }
+  .titulo-form{
+    text-align: center;
+  }
+  }
+  
+  /* Para escritorio pequeño y tabletas en horizontal (769px - 1024px) */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .img_logo {
+    width: 130px;
+    height: 95px;
+    margin-right: 150px;
+  }
+  .navBar_ul li a {
+    font-size: 22px;
+  }
+  .contacto-page {
+    max-width: 900px;
+  }
+  .titulo-form {
+    font-size: 30px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .product-1 {
+    width: 190px;
+    height: 200px;
+  }
+  }
+  
+  /* Para pantallas grandes (1025px en adelante) */
+  @media only screen and (min-width: 1025px) {
+  .img_logo {
+    width: 150px;
+    height: 100px;
+  }
+  .titulo-form {
+    font-size: 32px;
+  }
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .product-1 {
+    width: 200px;
+    height: 210px;
+  }
+  }
